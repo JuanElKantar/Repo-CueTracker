@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Contador</title>
+</head>
+<body>
+  <form>
+
+    <div class="dropdownm">
+      <label for="game-mode">Modo de juego</label>
+      <select id="game-mode" name="game-mode">
+        <option value="pool">Pool</option>
+        <option value="tres-bandas">Tres Bandas</option>
+        <option value="libres">Libres</option>
+      </select>
+    </div>
+  
+    <div class="dropdown">
+      <label for="num-players">Número de jugadores</label>
+      <select id="num-players" name="num-players">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  
+    <div id="countdown"></div>
+
+    <h1>Configuración de Tiempo de Juego</h1>
+
+    <form id="game-time-form">
+      <label for="minutes">Duración en minutos:</label>
+      <input type="number" id="minutes" name="minutes" min="1" required>
+   
+    </form>
+    
+    <div id="countdown"></div>
+    
+  <button type="submit">Iniciar partida</button>
+</form>
+
+<div id="countdown"></div>
+
+
+  </form>
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>

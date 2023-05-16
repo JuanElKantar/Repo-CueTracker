@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador</title>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="dropdown">
+      <button class="dropbtn">Modo de Juego</button>
+      <div class="dropdown-content">
+        <a href="#">Pool</a>
+        <a href="#">Tres Bandas</a>
+        <a href="#">Libres</a>
+      </div>
+    </div>
+    <h2 class="fecha">Fecha de la partida:</h2>
+    <p class="fecha-actual">16 de mayo de 2023</p>
+    <div class="caja">
+      <h1>LOCAL</h1>
+      <div class="caja-contador">
+        <p class="puntaje" id="plocal">0</p>
+      </div>
+      <div class="contenedor-de-botones">
+        <button class="boton-incremento" onclick="incrementL(-1)">-1</button>
+        <button class="boton-incremento" onclick="incrementL(1)">+1</button>
+        <button class="boton-incremento" onclick="incrementL(2)">+2</button>
+        <button class="boton-incremento" onclick="incrementL(3)">+3</button>
+      </div>
+    </div>
+    <div class="caja">
+      <h1>VISITANTE</h1>
+      <div class="caja-contador">
+        <p class="puntaje" id="pvis">0</p>
+      </div>
+      <div class="contenedor-de-botones">
+        <button class="boton-incremento" onclick="incrementV(-1)">-1</button>
+        <button class="boton-incremento" onclick="incrementV(1)">+1</button>
+        <button class="boton-incremento" onclick="incrementV(2)">+2</button>
+        <button class="boton-incremento" onclick="incrementV(3)">+3</button>
+      </div>
+    </div>
+    <button class="boton-undo" onclick="undo()">Undo</button>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
